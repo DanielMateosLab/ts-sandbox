@@ -24,7 +24,7 @@ RUN if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
     fi \
     #
     # Install tslint, typescript. eslint is installed by javascript image
-    && sudo -u ${USERNAME} npm install -g typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+    && sudo -u ${USERNAME} npm install -g typescript
 
 # *********************************************************************
 # * Uncomment this section to use RUN to install other dependencies.  *
